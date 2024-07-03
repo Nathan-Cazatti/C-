@@ -1,0 +1,40 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int num1, num2;
+        Console.WriteLine("===========Calculadora===========")
+        Console.WriteLine();
+        Console.WriteLine("Primeiro Valor(Valores inteiros): ");
+        num1 = Convert.ToInt32( Console.ReadLine() );
+        Console.WriteLine("Segundo Valor(Valores Inteiros): ");
+        num2 = Convert.ToInt32( Console.ReadLine() );
+        
+        Console.WriteLine("Qual operação deseja fazer? ");
+        Console.WriteLine("1. Soma");
+        Console.WriteLine("2. Subtração");
+        Console.WriteLine("3. Divisão");
+        Console.WriteLine("4. Multiplicação");
+        
+        op = Convert.ToInt32( Console.ReadLine() );
+        
+        if(op == 1){
+             Console.WriteLine("A soma de" + num1 + " + " + num2 + " e igual a " + (num1+num2) );
+             
+            else if(op == 2){
+                 Console.WriteLine("A soma de" + num1 + " + " + num2 + " e igual a " + (num1-num2) );
+                 
+            }
+            else if(op == 3){
+                 Console.WriteLine("A soma de" + num1 + " + " + num2 + " e igual a " + (num1/num2) );
+                 
+            }
+            else if(op == 4){
+                 Console.WriteLine("A soma de" + num1 + " + " + num2 + " e igual a " + (num1*num2) );
+                 
+            }
+        }
+    }
+}
